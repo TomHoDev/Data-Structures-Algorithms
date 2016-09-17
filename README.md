@@ -1,7 +1,7 @@
 # Data-Structures-Algorithms
 
 ## Fixed Arrays Challenge
-Model a C fixed array in Ruby 
+*Model a C fixed array in Ruby 
 
 ## Array Lists Challenge
 
