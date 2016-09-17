@@ -1,4 +1,4 @@
-require_relative 'fixed_array'
+require_relative '../fixed_array'
 
 describe FixedArray do
   let(:fa) {FixedArray.new(3)}
@@ -13,7 +13,9 @@ describe FixedArray do
   end
 
   it 'returns an error when an invalid index is given' do 
-    
+    expect { fa.get(4) }.to raise_error(IndexOutOfBoundsError)
+    expect { fa.get(-1) }.to raise_error(IndexOutOfBoundsError)
   end
     
 end
+
