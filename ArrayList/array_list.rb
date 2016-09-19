@@ -19,4 +19,8 @@ class ArrayList
     @array.set(index,value)
   end
 
+  def length
+    @array.array.length
+  end
+
 end

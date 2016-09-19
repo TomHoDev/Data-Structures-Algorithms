@@ -41,4 +41,10 @@ describe ArrayList do
     end
   end
 
+  describe 'ArrayList#length' do 
+    it 'returns the length of the list' do 
+      expect(al.length).to eq(3)
+    end
+  end
+
 end
