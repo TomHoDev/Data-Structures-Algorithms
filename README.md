@@ -4,6 +4,7 @@
 * Model a C fixed array in Ruby 
 
 ## Array Lists Challenge
+Model an ArrayList in Ruby with expanding size
 
 ## Linked Lists Challenge
 
