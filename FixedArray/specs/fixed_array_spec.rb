@@ -1,10 +1,10 @@
 require_relative '../fixed_array'
 
 describe FixedArray do
-  let(:fa) {FixedArray.new(3)}
+  let(:fa) { FixedArray.new(3) }
 
   describe 'FixedArray#new' do
-    it 'instantiate a new array with given size' do 
+    it 'instantiates a new array with given size' do 
       expect(FixedArray.new(3).array).to eq ([nil,nil,nil])
     end
   end
@@ -23,7 +23,7 @@ describe FixedArray do
 
   describe 'FixedArray#get' do
     it 'changes the fixed array' do 
-      expect { fa.set(0,2)}.to change{fa.get(0)}.from(nil).to(2)
+      expect { fa.set(0,2)}.to change{ fa.get(0) }.from(nil).to(2)
     end
 
     it 'returns the new element' do 
