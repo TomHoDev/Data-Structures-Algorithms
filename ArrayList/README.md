@@ -57,7 +57,7 @@ Be sure to note the _best case_ and _worst case_ complexity for each method. Dep
 
 ## Stretch: Growth strategies
 
-There are many strategies to grow your ArrayList, but they're not all created equal. Think about your own strategy, and whether it's optimal. You may interested to know that there is a growth strategy that will allow for [_amortized_ constant time](http://en.wikipedia.org/wiki/Amortized_analysis).
+There are many strategies to grow your ArrayList, but they're not all created equal. Think about your own strategy, and whether it's optimal. You may be interested to know that there is a growth strategy that will allow for [_amortized_ constant time](http://en.wikipedia.org/wiki/Amortized_analysis).
 
 ### Amortized?
 
