@@ -15,12 +15,27 @@ class ArrayList
     @array.get(index)
   end
 
-  def set(index, value)
-    @array.set(index,value)
+  def set(index, element)
+    @array.set(index, element)
   end
 
   def length
     @array.array.length
   end
+
+  def insert(index, element)
+    if out_of_bounds?(index)
+      raise IndexOutOfBoundsError
+    end
+    @array.array.insert(index, element)
+  end
+
+  private 
+    def out_of_bounds?(index)
+      if index >= @array.array.length || index < 0
+        return true
+      end
+      false 
+    end
 
 end

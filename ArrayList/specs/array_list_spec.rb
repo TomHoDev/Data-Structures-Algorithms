@@ -47,4 +47,16 @@ describe ArrayList do
     end
   end
 
+  describe 'ArrayList#insert' do 
+    it 'inserts inserts an element into the list' do 
+      expect { al.insert(1,1) }.to change{ al.array.array }.from([nil,nil,nil]).to([nil,1,nil,nil])
+    end
+
+    it 'raises an error when the index does not exit' do 
+      expect { al.insert(4,1) }.to raise_error(IndexOutOfBoundsError)
+      expect { al.insert(-1,1) }.to raise_error(IndexOutOfBoundsError)
+    end
+
+  end
+
 end
