@@ -13,8 +13,10 @@ describe Node do
 
   describe 'Node#insert_after' do 
     it 'links current node to new node' do 
-      expect{ node0.insert_after(node1) }.to change{ node1.next }.from(nil).to(node2)
+      expect{ node0.insert_after(node1) }.to change{ node0.next }.from(nil).to(node1)
     end
   end
+
+  describe 'Node'
 
 end

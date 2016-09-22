@@ -5,4 +5,8 @@ class Node
   def initialize(element) 
     @element = element
   end
+
+  def insert_after(node)
+    @next = node
+  end
 end
