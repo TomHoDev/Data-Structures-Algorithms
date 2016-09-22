@@ -17,6 +17,11 @@ describe Node do
     end
   end
 
-  describe 'Node'
+  describe 'Node#remove_after' do 
+    it 'removes the next node from the current node' do 
+      node0.insert_after(node1)
+      expect{ node0.remove_after }.to change{ node0.next }.from(node1).to(nil)
+    end
+  end
 
 end
