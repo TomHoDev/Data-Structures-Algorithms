@@ -50,6 +50,7 @@ Benchmark.bm do |x|
   x.report { 1000.times { f.length } }
 end
 
+# O(1)
 puts 'Insert:'
 Benchmark.bm do |x|
   x.report { 1000.times { a.insert(10,1) } }
